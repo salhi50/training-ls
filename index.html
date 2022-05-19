@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/wspace.css">
+  <title>project-2</title>
+</head> 
+  <body class="flex pdy-30 align-center justify-center full-height-screen fd-col">
+    <div class="container full-width">
+      <!-- main content -->
+      <div class="content mgx-auto">
+        <!-- input field -->
+        <div class="input-field">
+          <input type="text" class="rounded mgb-1rem w-color" name="" placeholder="Anything..." id="input">
+        </div>
+        <!-- list items -->
+        <div class="area-list">
+          <ul class="rounded" id="parent">
+            
+          </ul>
+        </div>
+        <!-- available items part -->
+        <div class="available mgt-1rem pd-10 rounded">
+          <p class="p-small">You have <span class="w-color fw-500" id="available"></span> texts.</p>
+        </div>
+
+      </div>
+      <div class="options mgx-auto flex align-center mgt-1rem">
+        <div class="btn-clear fl-1 pdr-15"><button class="btn p-mid full-width bleu-bg w-color rounded all" id="clear">Clear All</button></div>
+        <div class="btn-options fl-1">
+          <button class="btn full-width p-mid white-bg rounded more" id="more">
+            <span>Settings</span>
+            <i class="fa fa-caret-down pdl-10"></i>
+          </button>
+        </div>
+      </div>
+      <div class="menu mgx-auto mgt-half-1rem" id="menu">
+        <ul class="rounded">
+          <li class="pdy-5 user-none pdx-10" id="alpha">
+            <i class="fa fa-sort-alpha-asc"></i>
+            <span class="pdl-10 capital">sort Alpha</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="big">
+            <i class="fa fa-sort-numeric-desc"></i>
+            <span class="pdl-10 capital">biggest to smallest (nums)</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="small">
+            <i class="fa fa-sort-numeric-asc"></i>
+            <span class="pdl-10 capital">smallest to biggest (nums)</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="upper">
+            <i class="fa fa-font"></i>
+            <span class="pdl-10 capital">to UpperCase (all)</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="lower">
+            <span>a.</span>
+            <span class="pdl-10 capital">to LowerCase (All)</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="random">
+            <i class="fa fa-gears"></i>
+            <span class="pdl-10 capital">random order</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="other">
+            <i class="fa fa-arrows-h"></i>
+            <span class="pdl-10 capital">reverse texts</span>
+          </li>
+          <li class="pdy-5 user-none pdx-10" id="revOrder">
+            <i class="fa fa-list"></i>
+            <span class="pdl-10 capital">reverse order</span>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!-- modal -->
+
+      <div class="parent-modal d-none" style="color: #3e3e3e;background: rgba(0,0,0,.5);" id="parent-modal">
+        <div class="main-modal" id="main-modal">
+          <h3 class="capital mgb-1h5rem">edit text</h3>
+          <!-- input edit -->
+          <input type="text" class="full-width" name="" placeholder="Edit" id="editInput">
+          <!-- btns -->
+          <div class="btns flex justify-end mgt-1h5rem">
+            <button class="cancel btn border-none rounded bg-none mgr-half-1rem" id="cancel">cancel</button>
+            <button class="bleu-bg w-color rounded edit btn" id="change">Edit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+<script src="challenge.js"></script>
+<script src="learn.js"></script>
+</html>

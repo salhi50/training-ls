@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+/* body */
+
+body {
+  font-family: 'Poppins' , sans-serif;
+  font-size: 1rem;
+  background: var(--dark-bg);
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* color: #161c20; */
+  color: var(--gray-for-dark);
+  overflow-y: auto;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+}
+
+/* variables */
+
+:root {
+  --main-transition: 0.2s;
+  --dark-blue-color: #0875d5;
+  --bg-footer-black: #161c20;
+  --bg-facebook: #3b5998;
+  --border-input: #cad0d5;
+  --gradient-overlay: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  --relax-green: #29c187;
+  --shadow-btn: 0 6px 25px -25px #000;
+  --light-yellow: #fcfcc5;
+  --light-green: #d9eee1;
+  --light-red: #fcbcc3;
+  --light-bleu: #bcdbfc;
+  --red-danger: #d12727;
+  --dark-bg: #1f2937;
+  --gray-for-dark: #9ca3af;
+}
+
+/* fluid container */
+@media (min-width: 768px) {
+  .fluid-container{
+    padding: 0 1.5rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .fluid-container{
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .fluid-container{
+    padding: 0 .75rem;
+  }
+}
+
+.content, .options, .menu{
+  width: 350px;
+  max-width: 100%;
+}
+.content input{
+  width: 100%;
+  border: 1px solid var(--gray-for-dark) !important;
+  min-height: 40px;
+  caret-color: white;
+}
+.content ul, .content .available{
+    background: #101824;
+}
+.content ul li:not(.content li:last-child){
+  border-bottom: 1px solid #212121;
+}
+.content ul li i{
+  cursor: pointer;
+}
+
+/* modal */
+
+.main-modal{
+  width: 500px;
+  max-width: 100%;
+}
+.main-modal input{
+  border: 0 !important;
+  border-bottom: 1px solid #d1d4d7 !important;
+  font-size: 18px !important;
+}
+.main-modal  input:focus{
+  border-color: #0f8cfa !important;
+}
+.main-modal .btns button{
+    font-size: 15px !important;
+}
+.main-modal .btns button.edit{
+  padding: 2px 15px !important;
+}
+.main-modal .btns button.cancel{
+  color: #0f8cfa;
+  padding: 9px 15px !important;
+}
+.main-modal .btns button.cancel:hover{
+  color: var(--dark-blue-color);
+  background: #f1f1f1 !important;
+}
+.main-modal .btns button.edit:hover{
+  background: var(--dark-blue-color);
+}
+
+/* button options  */
+
+.options button.all:hover{
+    background: var(--dark-blue-color);
+}
+button.more:active{
+  color: #161c20;
+}
+.menu ul{
+    background: white !important;
+}
+.menu {
+  color: #434343 !important;
+  font-size: 14px !important;
+}
+.menu ul li:not(.menu li:last-child){
+  border-bottom: 1px solid #d1d4d7;
+}
+.menu ul li:active{
+  background: #e5e5e5;
+}
+.menu ul li{
+  cursor: pointer;
+  font-weight: 500;
+}
+.menu ul li:last-child{
+  border-radius: 0 0 .25rem .25rem;
+}
+.menu ul li:first-child{
+  border-radius: .25rem .25rem 0 0;
+}
